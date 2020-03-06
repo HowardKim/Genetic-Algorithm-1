@@ -1,5 +1,4 @@
 #Howard Kim
-#a3.py
 #for comp131 Spring 2019
 
 #a box is represented by a tuple (weight, importance, included)
