@@ -1,6 +1,5 @@
-Assignment 3 for Comp131 Spring 2019
+Genetic Algorithm for the Knapsack Problem
 Howard Kim
-
 
 Each box is represented by a tuple with the parameters [weight, importance, included]. Included is 1 if yes, 0 if no. This list of boxes is the genome. Every list of boxes is a potential solution, and a large number of possible solutions (default 1000) will be evaluated by a fitness function. Those with the highest fitness functions will be more likely to survive to the next generation. These survivors will sexually reproduce with other survivors to produce the next generation. Upon creation, the new units will have a small mutation chance. This process will be repeated for K generations (default K=100) when the most fit specimen will be selected as a solution.
 The fitness function is determined by the total importance of the included boxes (importance is the sum of box[0] * box[2] for all boxes in genome, weight is the sum of box[1] * box[2] for all boxes in genome). If overweight, a value of (weight - maximum weight) is subtracted from the fitness function. The population is then sorted by the fitness of each genome.
